@@ -4,7 +4,7 @@ async function getVideo() {
   resultDiv.innerHTML = "Mengambil video...";
 
   try {
-    const response = await fetch(`https://api.tikwm.com/video/info?url=${encodeURIComponent(videoUrl)}`);
+    const response = await fetch(`https://ssstik.io/id/?url=${encodeURIComponent(videoUrl)}`);
     const data = await response.json();
 
     if (data.data && data.data.play) {
