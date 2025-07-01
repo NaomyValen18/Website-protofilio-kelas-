@@ -4,7 +4,7 @@ async function getVideo() {
   resultDiv.innerHTML = "Mengambil video...";
 
   try {
-    const response = await fetch(`https://tiktok-video-downloader-api.p.rapidapi.com=${encodeURIComponent(videoUrl)}`);
+    const response = await fetch(`https://open.tiktokapis.com/v2/user/data/download/=${encodeURIComponent(videoUrl)}`);
     const data = await response.json();
 
     if (data.data && data.data.play) {
